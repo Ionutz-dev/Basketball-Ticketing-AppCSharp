@@ -1,0 +1,14 @@
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\bin\Debug\net9.0\CSharpApp.exe
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\bin\Debug\net9.0\CSharpApp.deps.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\bin\Debug\net9.0\CSharpApp.runtimeconfig.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\bin\Debug\net9.0\CSharpApp.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\bin\Debug\net9.0\CSharpApp.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.GeneratedMSBuildEditorConfig.editorconfig
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.AssemblyInfoInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.AssemblyInfo.cs
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.csproj.CoreCompileInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\refint\CSharpApp.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\CSharpApp.genruntimeconfig.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpProject\CSharpApp\obj\Debug\net9.0\ref\CSharpApp.dll

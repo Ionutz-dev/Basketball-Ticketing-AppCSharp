@@ -1,3 +1,12 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using CSharpApp.Repository;
 
-Console.WriteLine("Hello, World!");
+class Program {
+    static void Main(string[] args) {
+        var repo = new MatchRepository();
+        var matches = repo.FindAll();
+        foreach (var match in matches) {
+            Console.WriteLine($"{match.TeamA} vs {match.TeamB}");
+        }
+    }
+}

@@ -2,9 +2,9 @@
 
 public class Match
 {
-    public int MatchID { get; set; }
-    public string Title { get; set; }
-    public string Stage { get; set; }
-    public decimal Price { get; set; }
+    public int Id { get; set; }
+    public string TeamA { get; set; }
+    public string TeamB { get; set; }
+    public double TicketPrice { get; set; }
     public int AvailableSeats { get; set; }
 }

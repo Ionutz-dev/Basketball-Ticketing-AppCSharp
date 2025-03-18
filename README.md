@@ -1,8 +1,6 @@
 # Basketball Ticket Sales System (C#)
 This is a C# implementation of a ticketing system for basketball matches.
 
----
-
 ## Project Structure
 ```
 CSharpApp/
@@ -30,16 +28,12 @@ CSharpApp/
 └── Program.cs                          # Entry point of the application
 ```
 
----
-
 ## Features
 - User authentication (Login/Logout)
 - Ticket sales tracking
 - Available seat search and management
 - Logging via console outputs
 - Database connection via configuration file (SQLite)
-
----
 
 ## How to Run
 1. Clone the repository.
@@ -49,8 +43,6 @@ CSharpApp/
 4. Build the project.
 5. Ensure `identifier.sqlite` is located in the `bin/Debug/netX.X/` folder.
 6. Run the application.
-
----
 
 ## Homework Requirements Implemented
 - Designed and implemented the **model classes**: `User`, `Match`, and `Ticket`, each representing core entities of the ticket sales system with appropriate properties and constructors.

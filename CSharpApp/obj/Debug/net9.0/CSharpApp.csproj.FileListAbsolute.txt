@@ -56,4 +56,3 @@ E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\CSharpApp\obj\Debug\net9.0\refint\CSharpA
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\CSharpApp\obj\Debug\net9.0\CSharpApp.pdb
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\CSharpApp\obj\Debug\net9.0\CSharpApp.genruntimeconfig.cache
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\CSharpApp\obj\Debug\net9.0\ref\CSharpApp.dll
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\CSharpApp\bin\Debug\net9.0\identifier.sqlite

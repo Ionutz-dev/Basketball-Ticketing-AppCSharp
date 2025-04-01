@@ -1,53 +1,87 @@
-# Basketball Ticket Sales System (C#)
-This is a C# implementation of a ticketing system for basketball matches.
+# 🏀 Basketball Ticket Sales System (C# + WinForms)
 
-## Project Structure
+This project is a **Windows Forms desktop application** for managing basketball ticket sales. It supports GUI interaction, ticket purchase, seat tracking, and SQLite-based persistent storage.
+
+## 📁 Project Structure
 ```
 CSharpApp/
 │
-├── CSharpApp.csproj                    
-├── App.config                          # Configuration file for database connection
-├── identifier.sqlite                   # SQLite database file
-├── README.md                           # Project documentation
+├── CSharpApp.csproj                      # .NET project file
+├── App.config                            # Configuration file for database connection (SQLite)
+├── identifier.sqlite                     # SQLite database file
+├── README.md                             # Project documentation
 │
 ├── DB/
-│   └── DBUtils.cs                      # Utility for database connection management
+│   └── DBUtils.cs                        # Utility for managing SQLite DB connections
 │
 ├── Model/
-│   ├── Match.cs
-│   ├── Ticket.cs
-│   └── User.cs
+│   ├── Match.cs                          # Represents a basketball match
+│   ├── Ticket.cs                         # Represents a ticket sale
+│   └── User.cs                           # Represents a customer or user
 │
 ├── Repository/
-│   ├── Interfaces/
-│   │   ├── IMatchRepository.cs
-│   │   ├── ITicketRepository.cs
-│   │   └── IUserRepository.cs
-│   └── MatchRepository.cs              
+│   ├── IMatchRepository.cs
+│   ├── ITicketRepository.cs
+│   ├── IUserRepository.cs                # Interfaces for repository abstractions
+│   ├── MatchRepository.cs                # SQLite implementation for match data
+│   └── TicketRepository.cs               # SQLite implementation for ticket sales
 │
-└── Program.cs                          # Entry point of the application
+├── Service/
+│   └── TicketService.cs                  # Business logic layer for ticket operations
+│
+├── MainForm.cs                           # WinForms GUI logic
+├── MainForm.Designer.cs                  # Auto-generated WinForms designer
+└── Program.cs                            # Entry point of the application
 ```
 
-## Features
-- User authentication (Login/Logout)
-- Ticket sales tracking
-- Available seat search and management
-- Logging via console outputs
-- Database connection via configuration file (SQLite)
+## ✨ Features
+- Windows Forms **Graphical User Interface** for real-time interaction.
+- **Ticket Purchase Flow**: Select match → Enter customer & seats → Confirm sale.
+- **Available Seats Tracking** and automatic match updates.
+- **SQLite-based Persistent Storage**.
+- **Console Logging** for debugging and tracing repository logic.
+- **Configurable Connection String** via `App.config`.
 
-## How to Run
-1. Clone the repository.
-2. Open the project in **Rider** or **Visual Studio**.
-3. Install dependencies:
-    - Via NuGet: `System.Data.SQLite` version `1.0.119`
-4. Build the project.
-5. Ensure `identifier.sqlite` is located in the `bin/Debug/netX.X/` folder.
-6. Run the application.
+## 🚀 How to Run the App
+1. **Clone the Repository**
+   ```bash
+   git clone <repo-url>
+   cd CSharpApp
+   ```
 
-## Homework Requirements Implemented
-- Designed and implemented the **model classes**: `User`, `Match`, and `Ticket`, each representing core entities of the ticket sales system with appropriate properties and constructors.
-- Defined **repository interfaces** for data operations related to users, matches, and tickets, ensuring separation of concerns and enabling interaction with a **relational database (SQLite)**.
-- Developed the **repository implementation** `MatchRepository`, which performs SQL-based operations such as fetching all matches, updating available seats, and retrieving available matches in descending order.
-- Integrated **logging via console outputs** within repository methods to trace key actions such as database queries, updates, and error messages.
-- Configured **database connection management** through the `DBUtils` utility class, which retrieves connection parameters from `App.config` using `ConfigurationManager`, allowing flexible, centralized configuration.
+2. **Open in Rider or Visual Studio**
+   - Ensure `.NET 9.0` SDK is installed.
+   - Open the `.csproj` file.
 
+3. **Install Dependencies**
+   - Install `System.Data.SQLite` (v1.0.119) via NuGet.
+
+4. **Ensure Database File Exists**
+   - Confirm that `identifier.sqlite` exists at the **root** of the project.
+   - In `.csproj`, it should be set to:
+     ```xml
+     <None Update="identifier.sqlite">
+         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+     </None>
+     ```
+
+5. **Run the App**
+   - Build and Run the solution.
+   - The **Basketball Ticket Sales** GUI will open.
+
+## ✅ Homework Requirements Implemented
+
+- ✔️ **Model Classes**: `User`, `Match`, and `Ticket` defined to encapsulate application data.
+- ✔️ **Repository Interfaces**: Abstracted data access logic (`IMatchRepository`, `ITicketRepository`, etc).
+- ✔️ **Repository Implementations**: SQL logic using `SQLiteConnection`, includes seat updates and match filtering.
+- ✔️ **Console Logging**: Output added to repository methods to trace key DB actions.
+- ✔️ **Configuration Management**: SQLite connection string managed in `App.config` using `ConfigurationManager`.
+- ✔️ **UI Layer**: WinForms-based GUI (`MainForm`) for displaying and interacting with ticket data.
+- ✔️ **Service Layer**: Business logic handled by `TicketService`, decoupled from UI and DB layers.
+
+## 🧩 Technologies Used
+- .NET 9.0 (Windows Desktop)
+- Windows Forms
+- SQLite (`System.Data.SQLite`)
+- JetBrains Rider / Visual Studio
+- C#

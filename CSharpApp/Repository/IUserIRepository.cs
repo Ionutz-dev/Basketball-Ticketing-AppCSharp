@@ -4,5 +4,5 @@ using Model;
 
 public interface IUserIRepository
 {
-    User FindByUsername(string username); 
+    User? FindByUsername(string username);
 }

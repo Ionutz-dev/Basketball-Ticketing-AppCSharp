@@ -1,12 +1,19 @@
 ﻿using System;
+using System.Windows.Forms;
 using CSharpApp.Repository;
 
-class Program {
-    static void Main(string[] args) {
-        var repo = new MatchRepository();
-        var matches = repo.FindAll();
-        foreach (var match in matches) {
-            Console.WriteLine($"{match.TeamA} vs {match.TeamB}");
-        }
+namespace CSharpApp;
+
+internal static class Program
+{
+    [STAThread]
+    static void Main()
+    {
+        ApplicationConfiguration.Initialize();
+
+        IMatchRepository matchRepo = new MatchRepository();
+        ITicketRepository ticketRepo = new TicketRepository();
+
+        Application.Run(new MainForm(matchRepo, ticketRepo));
     }
 }

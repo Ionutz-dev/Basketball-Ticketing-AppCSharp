@@ -15,16 +15,16 @@ CSharpApp/
 │   └── DBUtils.cs                        # Utility for managing SQLite DB connections
 │
 ├── Model/
-│   ├── Match.cs                          # Represents a basketball match
-│   ├── Ticket.cs                         # Represents a ticket sale
-│   └── User.cs                           # Represents a customer or user
+│   ├── Match.cs                          
+│   ├── Ticket.cs                         
+│   └── User.cs                          
 │
 ├── Repository/
 │   ├── IMatchRepository.cs
 │   ├── ITicketRepository.cs
-│   ├── IUserRepository.cs                # Interfaces for repository abstractions
-│   ├── MatchRepository.cs                # SQLite implementation for match data
-│   └── TicketRepository.cs               # SQLite implementation for ticket sales
+│   ├── IUserRepository.cs                
+│   ├── MatchRepository.cs                
+│   └── TicketRepository.cs               
 │
 ├── Service/
 │   └── TicketService.cs                  # Business logic layer for ticket operations

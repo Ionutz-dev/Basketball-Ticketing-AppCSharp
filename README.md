@@ -1,87 +1,107 @@
-# 🏀 Basketball Ticket Sales System (C# + WinForms)
+# 🏀 Basketball Ticket Sales System (C# + WinForms + Networking)
 
-This project is a **Windows Forms desktop application** for managing basketball ticket sales. It supports GUI interaction, ticket purchase, seat tracking, and SQLite-based persistent storage.
+This project is a **C# WinForms application** connected to a **multi-client server** via **Sockets**.  
+It manages basketball ticket sales, live seat updates across clients, and persistent storage in SQLite.
 
 ## 📁 Project Structure
+
 ```
 CSharpApp/
 │
-├── CSharpApp.csproj                      # .NET project file
-├── App.config                            # Configuration file for database connection (SQLite)
-├── identifier.sqlite                     # SQLite database file
-├── README.md                             # Project documentation
+├── identifier.sqlite                    # SQLite database file
 │
-├── DB/
-│   └── DBUtils.cs                        # Utility for managing SQLite DB connections
+├── client/                               # WinForms Client Application
+│   ├── client.csproj
+│   ├── Forms/
+│   │   ├── LoginForm.cs
+│   │   ├── LoginForm.Designer.cs
+│   │   ├── MainForm.cs
+│   │   ├── MainForm.Designer.cs
+│   │   └── Program.cs
+│   └── Properties/
+│       └── Resources.resx
 │
-├── Model/
-│   ├── Match.cs                          
-│   ├── Ticket.cs                         
-│   └── User.cs                          
+├── server/                               # Server Application
+│   ├── server.csproj
+│   ├── App.config
+│   ├── BasketballServerImpl.cs
+│   └── StartServer.cs
 │
-├── Repository/
+├── model/                                # Shared Model Classes
+│   ├── model.csproj
+│   ├── Match.cs
+│   ├── Ticket.cs
+│   └── User.cs
+│
+├── persistence/                          # Repository Layer (Database Access)
+│   ├── persistence.csproj
+│   ├── DbUtils.cs
 │   ├── IMatchRepository.cs
 │   ├── ITicketRepository.cs
-│   ├── IUserRepository.cs                
-│   ├── MatchRepository.cs                
-│   └── TicketRepository.cs               
+│   ├── IUserRepository.cs
+│   ├── MatchRepositoryDb.cs
+│   ├── TicketRepositoryDb.cs
+│   └── UserRepositoryDb.cs
 │
-├── Service/
-│   └── TicketService.cs                  # Business logic layer for ticket operations
+├── networking/                            # Networking Layer (RPC Communication)
+│   ├── networking.csproj
+│   ├── BasketballClientObjectWorker.cs
+│   ├── BasketballServerObjectProxy.cs
+│   ├── ObjectRequestProtocol.cs
+│   ├── ObjectResponseProtocol.cs
+│   ├── DTOUtils.cs
+│   ├── MatchDTO.cs
+│   ├── TicketDTO.cs
+│   ├── UserDTO.cs
+│   └── ServerUtils.cs
 │
-├── MainForm.cs                           # WinForms GUI logic
-├── MainForm.Designer.cs                  # Auto-generated WinForms designer
-└── Program.cs                            # Entry point of the application
+└── services/                               # Service Layer (Interfaces)
+    ├── services.csproj
+    ├── BasketballException.cs
+    ├── IBasketballObserver.cs
+    └── IBasketballServices.cs
 ```
 
 ## ✨ Features
-- Windows Forms **Graphical User Interface** for real-time interaction.
-- **Ticket Purchase Flow**: Select match → Enter customer & seats → Confirm sale.
-- **Available Seats Tracking** and automatic match updates.
-- **SQLite-based Persistent Storage**.
-- **Console Logging** for debugging and tracing repository logic.
-- **Configurable Connection String** via `App.config`.
 
-## 🚀 How to Run the App
-1. **Clone the Repository**
-   ```bash
-   git clone <repo-url>
-   cd CSharpApp
-   ```
+- **Multi-client Server**: Multiple clients can connect and interact simultaneously.
+- **Login/Logout System**: Secure user authentication.
+- **Ticket Purchase Workflow**: Select match → Enter customer → Buy tickets.
+- **Live Seat Updates**: When one client sells a ticket, all connected clients automatically refresh.
+- **Persistent SQLite Database**: Matches, tickets, and users stored persistently.
+- **Error Handling**: Graceful handling of server disconnections, bad inputs, and network issues.
+- **Networking Communication**:
+   - Custom protocol using Request/Response objects.
+   - Client uses `BasketballServerObjectProxy` to call server methods.
+   - Server uses `BasketballClientObjectWorker` to handle each client connection.
+- **WinForms GUI**: Friendly interface to view matches and sell tickets.
 
-2. **Open in Rider or Visual Studio**
-   - Ensure `.NET 9.0` SDK is installed.
-   - Open the `.csproj` file.
+## 🚀 How to Run the System
 
-3. **Install Dependencies**
-   - Install `System.Data.SQLite` (v1.0.119) via NuGet.
+### 1. Start the Server
+- Open the `server` project in **Rider** or **Visual Studio**.
+- Make sure the `identifier.sqlite` database is in the server's output directory.
+- **Run the Server** (`StartServer.cs`).
 
-4. **Ensure Database File Exists**
-   - Confirm that `identifier.sqlite` exists at the **root** of the project.
-   - In `.csproj`, it should be set to:
-     ```xml
-     <None Update="identifier.sqlite">
-         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-     </None>
-     ```
+### 2. Start the Client(s)
+- Open the `client` project.
+- **Run the Client**.
+- Login using a valid username/password from the database.
 
-5. **Run the App**
-   - Build and Run the solution.
-   - The **Basketball Ticket Sales** GUI will open.
+- You can run **multiple clients** at once (e.g., from Rider or separate terminals).
+
+## ⚙️ Technologies Used
+- **C# 12 / .NET 9**
+- **WinForms**
+- **Sockets (TCP/IP Communication)**
+- **SQLite** (via `System.Data.SQLite`)
+- **JetBrains Rider** / **Visual Studio 2022**
 
 ## ✅ Homework Requirements Implemented
 
-- ✔️ **Model Classes**: `User`, `Match`, and `Ticket` defined to encapsulate application data.
-- ✔️ **Repository Interfaces**: Abstracted data access logic (`IMatchRepository`, `ITicketRepository`, etc).
-- ✔️ **Repository Implementations**: SQL logic using `SQLiteConnection`, includes seat updates and match filtering.
-- ✔️ **Console Logging**: Output added to repository methods to trace key DB actions.
-- ✔️ **Configuration Management**: SQLite connection string managed in `App.config` using `ConfigurationManager`.
-- ✔️ **UI Layer**: WinForms-based GUI (`MainForm`) for displaying and interacting with ticket data.
-- ✔️ **Service Layer**: Business logic handled by `TicketService`, decoupled from UI and DB layers.
-
-## 🧩 Technologies Used
-- .NET 9.0 (Windows Desktop)
-- Windows Forms
-- SQLite (`System.Data.SQLite`)
-- JetBrains Rider / Visual Studio
-- C#
+- ✔️ **Client-Server Networking** using Sockets and custom RPC Protocol.
+- ✔️ **Live Updates** for all connected clients via Observer Pattern.
+- ✔️ **Database Persistence** for Users, Matches, and Tickets.
+- ✔️ **WinForms GUI** for Login and Main Interaction.
+- ✔️ **Good Exception Handling** on both server and client sides.
+- ✔️ **Separation of Concerns**: `model`, `persistence`, `networking`, `services`, `client`, `server` modules.

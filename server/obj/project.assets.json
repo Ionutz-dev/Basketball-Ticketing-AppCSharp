@@ -1,0 +1,242 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.8": {
+      "Mono.Data.Sqlite/1.0.61": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Data.Sqlite.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.Data.Sqlite.dll": {}
+        }
+      },
+      "model/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "compile": {
+          "bin/placeholder/model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/model.dll": {}
+        }
+      },
+      "networking/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "model": "1.0.0",
+          "services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/networking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/networking.dll": {}
+        }
+      },
+      "persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Mono.Data.Sqlite": "1.0.61",
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/persistence.dll": {}
+        }
+      },
+      "services/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/services.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.8/win-x86": {
+      "Mono.Data.Sqlite/1.0.61": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.Data.Sqlite.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.Data.Sqlite.dll": {}
+        }
+      },
+      "model/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "compile": {
+          "bin/placeholder/model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/model.dll": {}
+        }
+      },
+      "networking/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "model": "1.0.0",
+          "services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/networking.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/networking.dll": {}
+        }
+      },
+      "persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "Mono.Data.Sqlite": "1.0.61",
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/persistence.dll": {}
+        }
+      },
+      "services/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.8",
+        "dependencies": {
+          "model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/services.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mono.Data.Sqlite/1.0.61": {
+      "sha512": "o5bYhnYDlQ8qiDBDJEnnK/LlQnHzpAb6ixXdrZKcVGv26jBfSm58ujAR1NLBhs0h+R5782VufbaF6gzYq3iiaA==",
+      "type": "package",
+      "path": "mono.data.sqlite/1.0.61",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Mono.Data.Sqlite.dll",
+        "mono.data.sqlite.1.0.61.nupkg.sha512",
+        "mono.data.sqlite.nuspec"
+      ]
+    },
+    "model/1.0.0": {
+      "type": "project",
+      "path": "../model/model.csproj",
+      "msbuildProject": "../model/model.csproj"
+    },
+    "networking/1.0.0": {
+      "type": "project",
+      "path": "../networking/networking.csproj",
+      "msbuildProject": "../networking/networking.csproj"
+    },
+    "persistence/1.0.0": {
+      "type": "project",
+      "path": "../persistence/persistence.csproj",
+      "msbuildProject": "../persistence/persistence.csproj"
+    },
+    "services/1.0.0": {
+      "type": "project",
+      "path": "../services/services.csproj",
+      "msbuildProject": "../services/services.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.8": [
+      "model >= 1.0.0",
+      "networking >= 1.0.0",
+      "persistence >= 1.0.0",
+      "services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Ionut\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj",
+      "projectName": "server",
+      "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj",
+      "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+      "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net48"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "projectReferences": {
+            "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+              "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+            },
+            "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj": {
+              "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj"
+            },
+            "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj": {
+              "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj"
+            },
+            "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
+              "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.200"
+    },
+    "frameworks": {
+      "net48": {
+        "targetAlias": "net48",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+      }
+    },
+    "runtimes": {
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

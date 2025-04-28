@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj": {}
+  },
+  "projects": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj",
+        "projectName": "model",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj",
+        "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj",
+        "projectName": "networking",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj",
+        "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              },
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj",
+        "projectName": "persistence",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj",
+        "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "dependencies": {
+            "Mono.Data.Sqlite": {
+              "target": "Package",
+              "version": "[1.0.61, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj",
+        "projectName": "server",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj",
+        "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              },
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj"
+              },
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj"
+              },
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj",
+        "projectName": "services",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj",
+        "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Ionut\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net48"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net48": {
+            "targetAlias": "net48",
+            "projectReferences": {
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net48": {
+          "targetAlias": "net48",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net9.0\model.deps.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net9.0\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net9.0\model.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.GeneratedMSBuildEditorConfig.editorconfig
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.AssemblyInfoInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.AssemblyInfo.cs
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.csproj.CoreCompileInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.sourcelink.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\refint\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\model.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net9.0\ref\model.dll

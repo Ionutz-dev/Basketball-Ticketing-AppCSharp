@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <ImplicitUsings>false</ImplicitUsings>
+<!--        <Nullable>enable</Nullable>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\model\model.csproj" />
+      <ProjectReference Include="..\services\services.csproj" />
+    </ItemGroup>
+
+</Project>

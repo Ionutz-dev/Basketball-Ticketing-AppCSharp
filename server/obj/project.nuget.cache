@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/EvPHsA5f2k=",
+  "success": true,
+  "projectFilePath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\server\\server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ionut\\.nuget\\packages\\mono.data.sqlite\\1.0.61\\mono.data.sqlite.1.0.61.nupkg.sha512"
+  ],
+  "logs": []
+}

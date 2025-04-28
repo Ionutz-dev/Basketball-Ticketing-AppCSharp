@@ -1,0 +1,16 @@
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\bin\Debug\net9.0\persistence.deps.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\bin\Debug\net9.0\persistence.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\bin\Debug\net9.0\persistence.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\bin\Debug\net9.0\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\bin\Debug\net9.0\model.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.csproj.AssemblyReference.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.GeneratedMSBuildEditorConfig.editorconfig
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.AssemblyInfoInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.AssemblyInfo.cs
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.csproj.CoreCompileInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.sourcelink.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persiste.5D1D8312.Up2Date
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\refint\persistence.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\persistence.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\persistence\obj\Debug\net9.0\ref\persistence.dll

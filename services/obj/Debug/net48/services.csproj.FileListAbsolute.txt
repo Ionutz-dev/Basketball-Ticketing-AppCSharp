@@ -1,0 +1,13 @@
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\bin\Debug\net48\services.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\bin\Debug\net48\services.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\bin\Debug\net48\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\bin\Debug\net48\model.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.csproj.AssemblyReference.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.GeneratedMSBuildEditorConfig.editorconfig
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.AssemblyInfoInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.AssemblyInfo.cs
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.csproj.CoreCompileInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.sourcelink.json
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.csproj.Up2Date
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\services\obj\Debug\net48\services.pdb

@@ -226,6 +226,21 @@
       "frameworks": {
         "net48": {
           "targetAlias": "net48",
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.25.3, )"
+            },
+            "Grpc.Core": {
+              "target": "Package",
+              "version": "[2.46.6, )"
+            },
+            "Grpc.Tools": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.71.0, )"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\RuntimeIdentifierGraph.json"
         }
       },

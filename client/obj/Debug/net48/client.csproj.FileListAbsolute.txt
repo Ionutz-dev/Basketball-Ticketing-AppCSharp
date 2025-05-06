@@ -1,9 +1,3 @@
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.csproj.AssemblyReference.cache
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.GeneratedMSBuildEditorConfig.editorconfig
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.AssemblyInfoInputs.cache
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.AssemblyInfo.cs
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.csproj.CoreCompileInputs.cache
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.sourcelink.json
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\client.exe.config
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\client.exe
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\client.pdb
@@ -13,6 +7,12 @@ E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\services.dll
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\model.pdb
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\networking.pdb
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\bin\Debug\net48\services.pdb
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.csproj.AssemblyReference.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.GeneratedMSBuildEditorConfig.editorconfig
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.AssemblyInfoInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.AssemblyInfo.cs
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.csproj.CoreCompileInputs.cache
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.sourcelink.json
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.csproj.Up2Date
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.exe
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\client\obj\Debug\net48\client.pdb

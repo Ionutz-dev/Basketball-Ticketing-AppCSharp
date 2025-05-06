@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "persistence", "persistence\persistence.csproj", "{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "grpc", "grpc\grpc.csproj", "{3DABDC39-53E1-450A-86CB-4B5926E4EC24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{C13785AD-EF07-4D98-91DC-A4019E7907FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +46,13 @@ Global
 		{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DABDC39-53E1-450A-86CB-4B5926E4EC24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DABDC39-53E1-450A-86CB-4B5926E4EC24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DABDC39-53E1-450A-86CB-4B5926E4EC24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DABDC39-53E1-450A-86CB-4B5926E4EC24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C13785AD-EF07-4D98-91DC-A4019E7907FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C13785AD-EF07-4D98-91DC-A4019E7907FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C13785AD-EF07-4D98-91DC-A4019E7907FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C13785AD-EF07-4D98-91DC-A4019E7907FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

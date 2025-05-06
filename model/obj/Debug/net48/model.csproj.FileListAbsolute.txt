@@ -1,10 +1,10 @@
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net48\model.dll
+E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net48\model.pdb
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.csproj.AssemblyReference.cache
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.GeneratedMSBuildEditorConfig.editorconfig
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.AssemblyInfoInputs.cache
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.AssemblyInfo.cs
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.csproj.CoreCompileInputs.cache
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.sourcelink.json
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net48\model.dll
-E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\bin\Debug\net48\model.pdb
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.dll
 E:\UBB\Year-2\Sem-2\MPP\Labs\CSharpApp\model\obj\Debug\net48\model.pdb

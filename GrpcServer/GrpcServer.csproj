@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+        <ImplicitUsings>false</ImplicitUsings>
+        <PlatformTarget>x86</PlatformTarget>
+        <Prefer32Bit>true</Prefer32Bit>
+        <!--        <Nullable>enable</Nullable>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Protobuf Include="proto\ticket.proto" GrpcServices="Server"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="System.Configuration" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="App.config">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+        <None Include="sqlite3.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\model\model.csproj"/>
+        <ProjectReference Include="..\networking\networking.csproj"/>
+        <ProjectReference Include="..\persistence\persistence.csproj"/>
+        <ProjectReference Include="..\services\services.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.25.3" />
+        <PackageReference Include="Grpc.Core" Version="2.46.6" />
+        <PackageReference Include="Grpc.Tools" Version="2.71.0">
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>

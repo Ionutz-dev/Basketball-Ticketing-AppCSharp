@@ -10,40 +10,38 @@ CSharpApp/
 │
 ├── identifier.sqlite                    # SQLite database file
 │
-├── client/                              # WinForms Client Application
-│   ├── client.csproj
-│   ├── Forms/
-│   │   ├── LoginForm.cs
-│   │   ├── LoginForm.Designer.cs
-│   │   ├── MainForm.cs
-│   │   ├── MainForm.Designer.cs
-│   │   └── Program.cs
-│   └── Properties/
-│       └── Resources.resx
+├── Client/                              # WinForms Client Application
+│   ├── Client.csproj
+│   ├── BasketballClientCtrl.cs
+│   ├── BasketballUserEventArgs.cs
+│   ├── LoginWindow.cs
+│   ├── LoginWindow.Designer.cs
+│   ├── MainWindow.cs
+│   ├── MainWindow.Designer.cs
+│   └── StartBasketballClient.cs
 │
-├── server/                              # Server Application (Sockets + gRPC)
-│   ├── server.csproj
+├── Server/                              # Socket Server Application
+│   ├── Server.csproj
 │   ├── App.config
 │   ├── BasketballServerImpl.cs
-│   ├── StartServer.cs
-│   ├── proto/                           # gRPC Protobuf Definitions
-│   │   └── ticket.proto
-│   └── grpc/                            # gRPC Server Implementation
-│       ├── GrpcBasketballServiceImpl.cs
-│       └── GrpcStartServer.cs
+│   └── StartServer.cs
 │
-├── GrpcServer/                          # gRPC build output (generated files & exe)
+├── GrpcServer/                          # Standalone gRPC Server
 │   ├── GrpcServer.csproj
-│   └── bin/obj/debug/...                # Compiled executables and generated classes
+│   ├── App.config
+│   ├── GrpcBasketballServerImpl.cs
+│   ├── GrpcStartServer.cs
+│   └── proto/                           # gRPC Protobuf Definitions
+│       └── ticket.proto
 │
-├── model/                               # Shared Model Classes
-│   ├── model.csproj
+├── Model/                               # Shared Model Classes
+│   ├── Model.csproj
 │   ├── Match.cs
 │   ├── Ticket.cs
 │   └── User.cs
 │
-├── persistence/                         # Repository Layer (Database Access)
-│   ├── persistence.csproj
+├── Persistence/                         # Repository Layer (Database Access)
+│   ├── Persistence.csproj
 │   ├── DbUtils.cs
 │   ├── IMatchRepository.cs
 │   ├── ITicketRepository.cs
@@ -52,8 +50,8 @@ CSharpApp/
 │   ├── TicketRepositoryDb.cs
 │   └── UserRepositoryDb.cs
 │
-├── networking/                          # Networking Layer (RPC Communication)
-│   ├── networking.csproj
+├── Networking/                          # Networking Layer (RPC Communication)
+│   ├── Networking.csproj
 │   ├── BasketballClientObjectWorker.cs
 │   ├── BasketballServerObjectProxy.cs
 │   ├── ObjectRequestProtocol.cs
@@ -64,8 +62,8 @@ CSharpApp/
 │   ├── UserDTO.cs
 │   └── ServerUtils.cs
 │
-└── services/                            # Service Layer (Interfaces)
-    ├── services.csproj
+└── Services/                            # Service Layer (Interfaces)
+    ├── Services.csproj
     ├── BasketballException.cs
     ├── IBasketballObserver.cs
     └── IBasketballServices.cs
@@ -79,55 +77,62 @@ CSharpApp/
 * **Live Seat Updates**: When one client sells a ticket, all connected clients automatically refresh.
 * **Persistent SQLite Database**: Matches, tickets, and users stored persistently.
 * **Error Handling**: Graceful handling of server disconnections, bad inputs, and network issues.
-* **Networking Communication**:
+* **Dual Communication Protocols**:
 
-  * Socket-based protocol using custom Request/Response objects.
-  * gRPC API using Protobuf definitions and server-streaming for updates.
-  * Server uses `BasketballClientObjectWorker` (sockets) and `IServerStreamWriter` (gRPC).
+  * **Socket-based Protocol**: Using custom Request/Response objects for C# WinForms clients.
+  * **gRPC API**: Using Protobuf definitions and server-streaming for Java clients.
+* **Cross-Platform Client Support**:
+
+  * C# WinForms clients connect via Sockets
+  * Java clients connect via gRPC
 * **WinForms GUI**: Friendly interface to view matches and sell tickets.
-* **gRPC Server Features**:
+* **Separate Server Applications**:
 
-  * Added to `server/grpc/` directory.
-  * Compatible with Java clients.
-  * Implements streaming updates via `WatchMatches()`.
+  * Socket Server for C# clients
+  * Standalone gRPC Server for Java clients
 
 ## 🚀 How to Run the System
 
 ### 1. Start the Socket Server (WinForms Clients)
 
-* Open the `server` project.
+* Open the `Server` project.
 * Ensure `identifier.sqlite` is in the working directory.
 * Run `StartServer.cs`.
 
-### 2. Start the gRPC Server (Java Clients or other gRPC clients)
+### 2. Start the gRPC Server (Java Clients)
 
-* Open `server/grpc/GrpcStartServer.cs`.
-* Make sure `identifier.sqlite` is accessible.
-* Run `GrpcStartServer`.
+* Open the `GrpcServer` project.
+* Ensure `identifier.sqlite` is accessible.
+* Run `GrpcStartServer.cs`.
 
 ### 3. Start the Client(s)
 
-* Open the `client` project.
-* Run the application.
-* Log in using a valid user from the database.
-* You can run multiple clients in parallel.
+* **For C# WinForms Clients**:
+  * Open the `Client` project.
+  * Run the application.
+  * Log in using a valid user from the database.
+  * You can run multiple clients in parallel.
+
+* **For Java Clients**:
+  * Ensure the gRPC server is running.
+  * Run the Java client application.
+  * The Java client will connect to port 50051 by default.
 
 ## ⚙️ Technologies Used
 
-* **C# 12 / .NET 9**
+* **C# / .NET Framework 4.8**
 * **WinForms**
 * **Sockets (TCP/IP Communication)**
 * **gRPC + Protobuf**
-* **SQLite** (via `System.Data.SQLite`)
+* **SQLite** (via `Mono.Data.Sqlite`)
 * **JetBrains Rider** / **Visual Studio 2022**
 
 ## ✅ Homework Requirements Implemented
 
 * ✔️ **Client-Server Networking** using both Sockets and gRPC.
-* ✔️ **Live Updates** for all connected clients (Sockets or gRPC).
+* ✔️ **Live Updates** for all connected clients (Socket Observer pattern and gRPC Streaming).
 * ✔️ **Database Persistence** using SQLite.
 * ✔️ **WinForms GUI** for Login and Match View.
-* ✔️ **Good Exception Handling** and modular structure.
-* ✔️ **Separation of Concerns** into `model`, `services`, `persistence`, `networking`, `client`, and `server`.
-
-
+* ✔️ **Cross-Platform Client Support** (C# and Java).
+* ✔️ **Good Exception Handling** with detailed logging.
+* ✔️ **Separation of Concerns** into `Model`, `Services`, `Persistence`, `Networking`, `Client`, `Server`, and `GrpcServer`.

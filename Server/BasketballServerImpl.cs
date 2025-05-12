@@ -75,7 +75,6 @@ namespace Server
             {
                 try
                 {
-                    // Notify client asynchronously
                     Task.Run(() => client.TicketSoldUpdate());
                 }
                 catch (Exception ex)

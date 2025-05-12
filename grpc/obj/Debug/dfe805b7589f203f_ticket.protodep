@@ -1,2 +1,0 @@
-obj\Debug\proto/Ticket.cs \
-obj\Debug\proto/TicketGrpc.cs: proto/ticket.proto

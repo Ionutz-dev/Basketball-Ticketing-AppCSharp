@@ -32,17 +32,17 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj"
               },
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\Networking.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\Networking.csproj"
               },
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\Persistence.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\Persistence.csproj"
               },
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj"
               }
             }
           }
@@ -86,14 +86,14 @@
         }
       }
     },
-    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj",
-        "projectName": "model",
-        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj",
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj",
+        "projectName": "Model",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\obj\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -135,14 +135,14 @@
         }
       }
     },
-    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\Networking.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj",
-        "projectName": "networking",
-        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\networking.csproj",
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\Networking.csproj",
+        "projectName": "Networking",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\Networking.csproj",
         "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\networking\\obj\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Networking\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -163,11 +163,11 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj"
               },
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj"
               }
             }
           }
@@ -191,14 +191,14 @@
         }
       }
     },
-    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj",
-        "projectName": "persistence",
-        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\persistence.csproj",
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\persistence\\obj\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -219,8 +219,8 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj"
               }
             }
           }
@@ -250,14 +250,14 @@
         }
       }
     },
-    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj": {
+    "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj",
-        "projectName": "services",
-        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\services.csproj",
+        "projectUniqueName": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\Ionut\\.nuget\\packages\\",
-        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\services\\obj\\",
+        "outputPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,8 +278,8 @@
           "net48": {
             "targetAlias": "net48",
             "projectReferences": {
-              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj": {
-                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\model\\model.csproj"
+              "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj": {
+                "projectPath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\Model\\Model.csproj"
               }
             }
           }

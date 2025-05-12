@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <ImplicitUsings>false</ImplicitUsings>
+        <RootNamespace>persistence</RootNamespace>
+<!--        <Nullable>enable</Nullable>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Model\Model.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Mono.Data.Sqlite" Version="1.0.61" />
+    </ItemGroup>
+
+</Project>

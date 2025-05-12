@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{E57C6332-1DC5-4B66-82E7-BB5970618B39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{E57C6332-1DC5-4B66-82E7-BB5970618B39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "services", "services\services.csproj", "{ADBF7505-5FB2-4108-B535-4786CBFEAF9D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{ADBF7505-5FB2-4108-B535-4786CBFEAF9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "networking", "networking\networking.csproj", "{DDA2C804-9DCD-47BA-AD3F-47BB1D1C8662}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Networking", "Networking\Networking.csproj", "{DDA2C804-9DCD-47BA-AD3F-47BB1D1C8662}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csproj", "{6968D257-BE95-4A45-8B22-DF6809DC812E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{6968D257-BE95-4A45-8B22-DF6809DC812E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{B4E81CB6-5947-46B0-9000-8E59F3673A73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{B4E81CB6-5947-46B0-9000-8E59F3673A73}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "persistence", "persistence\persistence.csproj", "{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{7D9F4F40-01F8-4738-96A0-F648E6A1ADD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcServer", "GrpcServer\GrpcServer.csproj", "{C13785AD-EF07-4D98-91DC-A4019E7907FD}"
 EndProject

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net48</TargetFramework>
+<!--        <Nullable>enable</Nullable>-->
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>false</ImplicitUsings>
+        <RootNamespace>client</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Model\Model.csproj" />
+      <ProjectReference Include="..\Networking\Networking.csproj" />
+      <ProjectReference Include="..\Services\Services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="LoginWindow.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="MainWindow.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>

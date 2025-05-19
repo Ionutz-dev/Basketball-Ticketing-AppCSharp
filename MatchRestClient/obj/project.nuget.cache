@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kBJh7NUbKGE=",
+  "success": true,
+  "projectFilePath": "E:\\UBB\\Year-2\\Sem-2\\MPP\\Labs\\CSharpApp\\MatchRestClient\\MatchRestClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Ionut\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.9\\microsoft.aspnet.webapi.client.5.2.9.nupkg.sha512",
+    "C:\\Users\\Ionut\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

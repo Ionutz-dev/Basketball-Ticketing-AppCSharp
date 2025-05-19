@@ -4,6 +4,8 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net48</TargetFramework>
         <ImplicitUsings>false</ImplicitUsings>
+        <PlatformTarget>x86</PlatformTarget>
+        <Prefer32Bit>true</Prefer32Bit>
         <!--        <Nullable>enable</Nullable>-->
     </PropertyGroup>
 
@@ -27,6 +29,9 @@
     <ItemGroup>
         <None Update="App.config">
             <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </None>
+        <None Include="sqlite3.dll">
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </None>
     </ItemGroup>
 

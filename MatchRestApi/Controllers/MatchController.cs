@@ -10,86 +10,93 @@ namespace MatchRestApi.Controllers
     public class MatchController : ApiController
     {
         private readonly IMatchRepository _matchRepository;
+        private readonly MatchRestRepository _matchRestRepository;
 
         public MatchController(IMatchRepository matchRepository)
         {
+            Console.WriteLine("MatchController created");
             _matchRepository = matchRepository;
+            _matchRestRepository = (MatchRestRepository)matchRepository;
         }
-
-        // GET: api/matches
+        
         [HttpGet]
         [Route("")]
-        public IHttpActionResult GetAll()
+        public IEnumerable<Match> GetAll()
         {
-            Console.WriteLine("Getting all matches");
-            var matches = _matchRepository.FindAll();
-            return Ok(matches);
+            Console.WriteLine("GET all matches");
+            return _matchRepository.FindAll();
         }
-
-        // GET: api/matches/5
+        
         [HttpGet]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public IHttpActionResult GetById(int id)
         {
-            Console.WriteLine($"Get match by id: {id}");
+            Console.WriteLine($"GET match by id: {id}");
             var match = _matchRepository.FindMatchById(id);
             if (match == null)
+            {
                 return NotFound();
-            
+            }
             return Ok(match);
         }
-
-        // POST: api/matches
+        
         [HttpPost]
         [Route("")]
-        public IHttpActionResult Create([FromBody] Match match)
+        public IHttpActionResult Post([FromBody] Match match)
         {
-            Console.WriteLine($"Creating match: {match}");
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
-            // In a real implementation, you would add the match to the repository
-            // _matchRepository.Add(match);
-            match.Id = 0; // Will be set by database
-            return Ok(match);
+            Console.WriteLine($"POST new match: {match}");
+            if (match == null)
+            {
+                return BadRequest("Match data is null");
+            }
+            
+            match.Id = 0;
+            
+            var createdMatch = _matchRestRepository.Save(match);
+            return Ok(createdMatch);
         }
-
-        // PUT: api/matches/5
+        
         [HttpPut]
-        [Route("{id}")]
-        public IHttpActionResult Update(int id, [FromBody] Match match)
+        [Route("{id:int}")]
+        public IHttpActionResult Put(int id, [FromBody] Match match)
         {
-            Console.WriteLine($"Updating match with id: {id}");
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-
+            Console.WriteLine($"PUT update match: {id}");
+            if (match == null)
+            {
+                return BadRequest("Match data is null");
+            }
+            
             var existingMatch = _matchRepository.FindMatchById(id);
             if (existingMatch == null)
-                return NotFound();
-
-            // In the original code, we can only update seats
-            int seatsChange = existingMatch.AvailableSeats - match.AvailableSeats;
-            if (seatsChange > 0)
             {
-                _matchRepository.UpdateSeats(id, seatsChange);
+                return NotFound();
             }
-
-            return Ok(existingMatch);
+            
+            var updatedMatch = _matchRestRepository.Update(id, match);
+            return Ok(updatedMatch);
         }
 
-        // DELETE: api/matches/5
         [HttpDelete]
-        [Route("{id}")]
+        [Route("{id:int}")]
         public IHttpActionResult Delete(int id)
         {
-            Console.WriteLine($"Deleting match with id: {id}");
-            var match = _matchRepository.FindMatchById(id);
-            if (match == null)
+            Console.WriteLine($"DELETE match: {id}");
+            
+            var existingMatch = _matchRepository.FindMatchById(id);
+            if (existingMatch == null)
+            {
                 return NotFound();
-
-            // In a real implementation, you would delete the match from the repository
-            // _matchRepository.Delete(match);
-            return StatusCode(System.Net.HttpStatusCode.NoContent);
+            }
+            
+            bool deleted = _matchRestRepository.Delete(id);
+            if (deleted)
+            {
+                return StatusCode(System.Net.HttpStatusCode.NoContent);
+            }
+            else
+            {
+                return InternalServerError();
+            }
         }
     }
 }

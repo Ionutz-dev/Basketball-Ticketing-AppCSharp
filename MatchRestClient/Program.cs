@@ -12,7 +12,7 @@ namespace MatchRestClient
     class Program
     {
         static HttpClient client = new HttpClient(new LoggingHandler(new HttpClientHandler()));
-        private static string URL_Base = "http://localhost:8080/basketball/api/matches";
+        private static string URL_Base = "http://localhost:8080/api/matches";
 
         public static void Main(string[] args)
         {
@@ -21,7 +21,8 @@ namespace MatchRestClient
 
         static async Task RunMenuAsync()
         {
-            client.BaseAddress = new Uri(URL_Base);
+            // Set the base address to the base URL path, not including the resource part
+            client.BaseAddress = new Uri("http://localhost:8080/api/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -80,7 +81,7 @@ namespace MatchRestClient
 
         static async Task GetAllMatchesAsync()
         {
-            var response = await client.GetAsync("");
+            var response = await client.GetAsync("matches");
             if (response.IsSuccessStatusCode)
             {
                 var matches = await response.Content.ReadAsAsync<List<Match>>();
@@ -105,7 +106,7 @@ namespace MatchRestClient
                 return;
             }
 
-            var response = await client.GetAsync($"{id}");
+            var response = await client.GetAsync($"matches/{id}");
             if (response.IsSuccessStatusCode)
             {
                 var match = await response.Content.ReadAsAsync<Match>();
@@ -153,8 +154,8 @@ namespace MatchRestClient
                 Console.WriteLine("Invalid seats format. Using default value 0.");
                 match.AvailableSeats = 0;
             }
-
-            var response = await client.PostAsJsonAsync("", match);
+            
+            var response = await client.PostAsJsonAsync("matches", match);
             if (response.IsSuccessStatusCode)
             {
                 var createdMatch = await response.Content.ReadAsAsync<Match>();
@@ -177,9 +178,8 @@ namespace MatchRestClient
                 Console.WriteLine("Invalid ID format.");
                 return;
             }
-
-            // First get current match
-            var getResponse = await client.GetAsync($"{id}");
+            
+            var getResponse = await client.GetAsync($"matches/{id}");
             if (!getResponse.IsSuccessStatusCode)
             {
                 if (getResponse.StatusCode == System.Net.HttpStatusCode.NotFound)
@@ -222,8 +222,8 @@ namespace MatchRestClient
             {
                 match.AvailableSeats = seats;
             }
-
-            var updateResponse = await client.PutAsJsonAsync($"{id}", match);
+            
+            var updateResponse = await client.PutAsJsonAsync($"matches/{id}", match);
             if (updateResponse.IsSuccessStatusCode)
             {
                 var updatedMatch = await updateResponse.Content.ReadAsAsync<Match>();
@@ -247,7 +247,7 @@ namespace MatchRestClient
                 return;
             }
 
-            var response = await client.DeleteAsync($"{id}");
+            var response = await client.DeleteAsync($"matches/{id}");
             if (response.IsSuccessStatusCode)
             {
                 Console.WriteLine($"Match with ID {id} deleted successfully!");

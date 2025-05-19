@@ -15,10 +15,8 @@ namespace MatchRestApi
     {
         public void Configuration(IAppBuilder app)
         {
-            // Configure Web API for self-host
             HttpConfiguration config = new HttpConfiguration();
             
-            // Web API routes
             config.MapHttpAttributeRoutes();
             
             config.Routes.MapHttpRoute(
@@ -27,18 +25,16 @@ namespace MatchRestApi
                 defaults: new { id = RouteParameter.Optional }
             );
 
-            // Configure dependency injection
             var connectionString = ConfigurationManager.ConnectionStrings["identifierDB"].ConnectionString;
             var props = new Dictionary<string, string> { { "ConnectionString", connectionString } };
             
-            var matchRepository = new MatchRepositoryDb(props);
+            var matchRepository = new MatchRestRepository(props);
             config.DependencyResolver = new SimpleDependencyResolver(matchRepository);
 
             app.UseWebApi(config);
         }
     }
-
-    // Simple dependency resolver for WebAPI
+    
     public class SimpleDependencyResolver : System.Web.Http.Dependencies.IDependencyResolver
     {
         private readonly IMatchRepository _matchRepository;
@@ -67,7 +63,6 @@ namespace MatchRestApi
 
         public void Dispose()
         {
-            // Nothing to dispose
         }
     }
 }
